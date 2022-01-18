@@ -28,7 +28,7 @@ const Contact = () => {
     };
 
     await axios
-      .put("http://localhost:3000/api/sendMessage", body)
+      .put("/api/sendMessage", body)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   };
