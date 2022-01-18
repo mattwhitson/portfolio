@@ -10,7 +10,7 @@ const Footer = () => {
         >
           <img src="Github-logo.png" alt="" className="h-12" />
         </a>
-        <p className="text-xs text-[#f7f7f7]">Made by Matthew Whitson | 2022</p>
+        <p className="text-xs text-[#f7f7f7]">Matthew Whitson | 2022</p>
       </div>
     </footer>
   );

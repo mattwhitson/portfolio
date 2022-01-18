@@ -13,4 +13,26 @@
     backdrop-filter: blur(10px);
     background-color: rgba(20, 20, 20, 0.5);
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }

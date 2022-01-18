@@ -17,25 +17,31 @@ const Projects = () => {
 const projectOne = {
   title: "Photo Sharing App",
   url: "/photostop.png",
+  gitLink: "https://github.com/mattwhitson/movie-app",
+  liveLink: "",
   techStack: "Next.js, TailwindCSS, Express.js, PostgreSQL, Firebase",
   explanation:
-    "Simple photo sharing app where users can create an account, sign in, and share photos. Images are uploaded and saved on Firebase Storage, then the url is stored in the db. Users can also like photos, comment on photos, and visit other user&apos;s profiles!",
+    "Simple photo sharing app where users can create an account, sign in, and share photos. Images are uploaded and saved on Firebase Storage. Users can also like photos, comment on photos, and visit other user's profiles!",
   textWhite: true,
 };
 
 const projectTwo = {
   title: "Messaging App",
   url: "/messenger.png",
+  gitLink: "",
+  liveLink: "https://www.mattdwhitson.com",
   techStack: "Next.js, TailwindCSS, Express.js, Socket.io, MongoDB",
   explanation:
-    "Basic messaging app where you can create an account and start conversations with other users by searching for their username. This app has real-time messages and notifications thanks to the utilization of web sockets with the Socket.io library. As a bonus, it also has link previews by detecting when a message is a url, and then uses Cheerio on the backend to scrape the relevant meta tags from the website the url directs to!",
+    "Basic messaging app where you can create an account and start conversations with other users. This app has real-time messages and notifications thanks to the utilization of web sockets with the Socket.io library. Additionally, it has link previews by detecting when a message is a url, and then uses Cheerio on the backend to scrape the relevant meta tags from the website the url directs to. Deployed on an Ubuntu Digital Ocean droplet using NGINX as a reverse proxy",
 };
 const projectThree = {
   title: "MovieDB App",
   url: "/movie-center.png",
-  techStack: "Next.js, TailwindCSS, Express.js, TMDB API",
+  gitLink: "https://github.com/mattwhitson/movie-app",
+  liveLink: "https://movie-app-mattwhitson.vercel.app/",
+  techStack: "Next.js, TailwindCSS, TMDB API",
   explanation:
-    "App that utilizes the Open Movie Database that allows you to search and check the ratings of pretty much any movie. It has search functionality if you&apos;re looking for a specific movie or tv show, or you can simply check out the movie and/or tv trending pages",
+    "App that utilizes the Open Movie Database that allows you to search and check the ratings of almost any movie. It has search functionality if you're looking for a specific movie or tv show, or you can simply check out the movie and/or tv trending pages",
   textWhite: true,
 };
 

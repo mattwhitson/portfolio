@@ -1,8 +1,12 @@
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useRef } from "react";
+import axios from "axios";
 
 const Contact = () => {
+  const recaptchaRef = useRef();
   const validationSchema = yup.object({
     name: yup.string().required("Name is required."),
     email: yup.string().required("Email is required."),
@@ -15,7 +19,19 @@ const Contact = () => {
 
   const { errors } = formState;
 
-  const submitMessage = async (message) => {};
+  const submitMessage = async (message) => {
+    const token = await recaptchaRef.current.executeAsync();
+    recaptchaRef.current.reset();
+    const body = {
+      ...message,
+      token,
+    };
+
+    await axios
+      .put("http://localhost:3000/api/sendMessage", body)
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
 
   return (
     <section
@@ -32,6 +48,11 @@ const Contact = () => {
         onSubmit={handleSubmit(submitMessage)}
         className="flex flex-col w-72 sm:w-96 space-y-4 pt-4 pb-36 mx-auto"
       >
+        <ReCAPTCHA
+          sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
+          size="invisible"
+          ref={recaptchaRef}
+        />
         <div>
           <input
             {...register("name")}
