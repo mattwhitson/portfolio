@@ -8,7 +8,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="Github-logo.png" alt="" className="h-12" />
+          <img src="github.png" alt="" className="h-12" />
         </a>
         <p className="text-xs text-[#f7f7f7]">Matthew Whitson | 2022</p>
       </div>
