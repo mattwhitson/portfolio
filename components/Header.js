@@ -34,7 +34,8 @@ const Header = () => {
     if (document.readyState) {
       const results = sections.map(
         (section) =>
-          document.getElementById(section).getBoundingClientRect().top + scrollY
+          document.getElementById(section).getBoundingClientRect().top +
+          window.pageYOffset
       );
       setSectionHeights(results);
     }
