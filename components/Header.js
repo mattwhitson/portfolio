@@ -5,14 +5,10 @@ const Header = () => {
   const [headerSticky, setHeaderSticky] = useState(false);
   const [currentSection, setCurrentSection] = useState();
   const [sectionHeights, setSectionHeights] = useState();
+  const [loaded, setLoaded] = useState(false);
   const sections = ["home", "about", "projects", "contact"];
 
   const determineCurrentSection = () => {
-    console.log(window.scrollY);
-    console.log(
-      document.getElementById(sections[0]).getBoundingClientRect().top
-    );
-    console.log(sectionHeights);
     if (window.scrollY < sectionHeights[1] - 250) {
       setCurrentSection(sections[0]);
     } else if (window.scrollY > sectionHeights[2] - 250) {
@@ -35,11 +31,13 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const results = sections.map(
-      (section) =>
-        document.getElementById(section).getBoundingClientRect().top + scrollY
-    );
-    setSectionHeights(results);
+    if (document.readyState) {
+      const results = sections.map(
+        (section) =>
+          document.getElementById(section).getBoundingClientRect().top + scrollY
+      );
+      setSectionHeights(results);
+    }
 
     window.addEventListener("scroll", setFixedHeader);
 
