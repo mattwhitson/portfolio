@@ -25,7 +25,9 @@ const ProjectReverse = ({
         onMouseOut={() => setOnHover(false)}
       >
         <div className="relative transition-transform ease-in-out duration-200 lg:group-one-hover:scale-110">
-          <img src={url} alt="" className="2xl:max-w-5xl" />
+          <div className="transition-transform ease-in-out duration-200 lg:group-two-hover:scale-100">
+            <img src={url} alt="" className="2xl:max-w-5xl" />
+          </div>
           <div className="hidden md:inline-block absolute bottom-0 left-0 p-6 bg-black bg-opacity-30">
             <h5 className="text-xl font-semibold ">Built with</h5>
             <p className="">{techStack}</p>
@@ -44,7 +46,7 @@ const ProjectReverse = ({
           </div>
           <div className="mt-4 flex space-x-4 2xl:space-x-0 2xl:justify-between 2xl:mt-auto 2xl:px-4">
             <a
-              href="https://www.mattdwhitson.com"
+              href={liveLink}
               className="relative px-2 py-1 bg-blue-700 rounded hover:cursor-pointer transition-transform ease-in-out duration-200 hover:scale-110 group"
               target="_blank"
               rel="noreferrer"
@@ -53,6 +55,7 @@ const ProjectReverse = ({
               <span className="relative">Live Demo</span>
             </a>
             <a
+              href={gitLink}
               className="relative px-2 py-1 bg-blue-700 rounded hover:cursor-pointer transition-transform ease-in-out duration-200 hover:scale-110 group"
               target="_blank"
               rel="noreferrer"

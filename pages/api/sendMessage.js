@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   const isHuman = await validateNotBot(token);
 
   if (!isHuman) {
-    res.status(400).json({ error: "Recaptcha thinks you're a bot..." });
+    res.status(400).json({ error: "Recaptcha thinks you're a bot... Sorry." });
   }
 
   const mailData = {

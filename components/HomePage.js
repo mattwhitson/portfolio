@@ -6,19 +6,6 @@ const HomePage = () => {
 
   useEffect(() => {
     setOnLoad(true);
-
-    // if(window.scrollY < sectionHeights[1] - 250) {
-    //   setCurrentSection(sections[0])
-    // } else if(window.scrollY > sectionHeights[2] - 250) {
-    //   if(window.scrollY > sectionHeights[3] - 250) {
-    //     setCurrentSection(sections[3])
-    //   }
-    //   else if(window.scrollY < setCurrentSection(sections[2])){
-    //     setCurrentSection(sections[1]);
-    //   } else {
-    //     setCurrentSection(2)
-    //   }
-    // }
   }, []);
   return (
     <section

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 const About = () => {
   return (
     <section id="about" className="max-w-7xl pt-32 mx-auto">
@@ -7,17 +6,17 @@ const About = () => {
       </h3>
       <div className="flex flex-col xl:flex-row">
         <p className="pt-6 xl:pt-12 px-6 md:px-24 text-white xl:px-0 xl:mr-12 xl:text-xl xl:w-1/3">
-          Hello, I&apos;m a self-taught Frontend Developer from Canada! Since
-          starting this journey I&apos;ve learned so much and I am continuing to
-          learn more everyday! I discovered a passion for creating web
-          applications and I enjoy all aspects of development, whether it be
-          making a good looking, responsive UI, or developing the logic behind
-          it. I&apos;m a naturally curious guy, and learning how all these
-          technologies work together is something I take great interest in. The
-          feeling you get when you work on something for hours and then it all
-          just clicks is unmatched. I feel like I&apos;m just starting to
-          scratch the surface of all there is to know, and I am excited to see
-          what the future brings!
+          Hello! I&apos;m a self-taught, aspiring Frontend / Full Stack
+          Developer from Canada! Since starting this journey I&apos;ve learned
+          so much and I&apos;m continuing to learn more everyday! I discovered a
+          passion for creating web applications and I enjoy all aspects of
+          development, whether it be making a good looking, responsive UI, or
+          developing the logic behind it. I&apos;m a naturally curious guy, and
+          learning how all these technologies work together is something I take
+          great interest in. The feeling you get when you spend hours making
+          something and then all of it just &#39;works&#39; is unmatched. I feel
+          like I&apos;m just starting to scratch the surface of all there is to
+          know, and I am excited to see what the future brings!
         </p>
         <div className="flex flex-col space-y-4 mt-8 xl:ml-12 xl:mt-0 mx-auto">
           <div className="flex flex-row space-x-10 xl:space-x-24 w-full">

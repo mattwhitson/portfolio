@@ -1,14 +1,6 @@
 import { useState } from "react";
 
-const Project = ({
-  title,
-  url,
-  gitLink,
-  liveLink,
-  techStack,
-  explanation,
-  textWhite,
-}) => {
+const Project = ({ title, url, gitLink, liveLink, techStack, explanation }) => {
   const [onHover, setOnHover] = useState(false);
   return (
     <article
@@ -28,18 +20,14 @@ const Project = ({
         onMouseOut={() => setOnHover(false)}
       >
         <div className="relative transition-transform ease-in-out duration-200 lg:group-two-hover:scale-110">
-          <img src={url} alt="" className="2xl:max-w-5xl" />
+          <div className="transition-transform ease-in-out duration-200 lg:group-two-hover:scale-100">
+            <img src={url} alt="" className="2xl:max-w-5xl" />
+          </div>
           <div className="hidden md:inline-block absolute bottom-0 right-0 p-6 bg-black bg-opacity-50">
-            <h5
-              className={`text-xl font-semibold text-right ${
-                textWhite ? "text-white" : "text-black"
-              }`}
-            >
+            <h5 className="text-xl font-semibold text-right text-white">
               Built with
             </h5>
-            <p className={textWhite ? "text-white" : "text-black"}>
-              {techStack}
-            </p>
+            <p className="text-white">{techStack}</p>
           </div>
         </div>
         <div className="relative flex flex-col px-2 mt-2 2xl:mt-0 mb-4 2xl:mb-24 pb-4 bg-neutral-900 rounded bg-opacity-90 backdrop-blur-10">
