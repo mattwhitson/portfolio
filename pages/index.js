@@ -15,7 +15,6 @@ export default function Home() {
         <title>Matthew Whitson</title>
         <meta name="description" content="Matt Whitson's portfolio website!" />
         <link rel="icon" href="/portfolio-favicon.png" />
-        <meta name="theme-color" content="#fff" />
         <meta name="theme-color" content="#171717" />
         <meta name="msapplication-navbutton-color" content="#171717" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#171717" />
