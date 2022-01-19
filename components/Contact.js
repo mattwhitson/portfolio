@@ -46,7 +46,7 @@ const Contact = () => {
       </p>
       <form
         onSubmit={handleSubmit(submitMessage)}
-        className="flex flex-col w-72 sm:w-96 space-y-4 pt-4 pb-36 mx-auto"
+        className="flex flex-col w-72 sm:w-96 space-y-4 pt-4 pb-20 sm:pb-36 mx-auto"
       >
         <ReCAPTCHA
           sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
