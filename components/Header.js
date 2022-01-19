@@ -9,6 +9,10 @@ const Header = () => {
 
   const determineCurrentSection = () => {
     console.log(window.scrollY);
+    console.log(
+      document.getElementById(sections[0]).getBoundingClientRect().top
+    );
+    console.log(sectionHeights);
     if (window.scrollY < sectionHeights[1] - 250) {
       setCurrentSection(sections[0]);
     } else if (window.scrollY > sectionHeights[2] - 250) {
