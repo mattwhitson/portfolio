@@ -8,6 +8,7 @@ const Header = () => {
   const sections = ["home", "about", "projects", "contact"];
 
   const determineCurrentSection = () => {
+    console.log(window.scrollY);
     if (window.scrollY < sectionHeights[1] - 250) {
       setCurrentSection(sections[0]);
     } else if (window.scrollY > sectionHeights[2] - 250) {
