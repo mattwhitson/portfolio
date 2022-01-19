@@ -1,2 +1,2 @@
-# About
-My portfolio website can be found at www.mattwhitson.dev
+# URL
+www.mattwhitson.dev
