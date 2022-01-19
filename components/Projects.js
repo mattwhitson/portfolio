@@ -17,7 +17,7 @@ const Projects = () => {
 const projectOne = {
   title: "Messaging App",
   url: "/messenger.png",
-  gitLink: "",
+  gitLink: "https://github.com/mattwhitson/chat-app-next.js",
   liveLink: "https://www.mattdwhitson.com",
   techStack: "Next.js, TailwindCSS, Express.js, Socket.io, MongoDB",
   explanation:
@@ -27,7 +27,7 @@ const projectOne = {
 const projectTwo = {
   title: "Photo Sharing App",
   url: "/photostop.png",
-  gitLink: "",
+  gitLink: "https://github.com/mattwhitson/photostop",
   liveLink: "https://photo-app-client.vercel.app/",
   techStack: "Next.js, TailwindCSS, Express.js, PostgreSQL, Firebase",
   explanation:
