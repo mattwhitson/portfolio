@@ -10,9 +10,10 @@ const About = () => {
           Canada! Since starting this journey several months ago, I&apos;ve
           discovered a passion for creating web applications that I didn&apos;t
           know I had. What I lack in experience I make up for with an eagerness
-          to learn and the ability to pick up new things quickly. I feel like
-          I&apos;m just starting to scratch the surface of all there is to know,
-          and I am excited to see what the future brings!
+          to learn and the ability to pick up new things quickly. Learning how
+          all of these technologies fit together to create beautiful, responsive
+          websites is something that greatly interests me, and I&apos;m excited
+          to see what the future brings!
         </p>
         <div className="flex flex-col space-y-4 mt-8 xl:ml-12 xl:mt-0 mx-auto">
           <div className="flex flex-row space-x-10 xl:space-x-24 w-full">
@@ -57,7 +58,7 @@ const About = () => {
               alt="mongo"
             />
             <img
-              src="/postgres.png"
+              src="/git.png"
               className="h-20 w-20 md:h-40 md:w-40 object-scale-down"
               alt="postgres"
             />
@@ -72,8 +73,7 @@ const About = () => {
       <div className="flex flex-col sm:flex-row justify-center text-white mt-12 px-6 md:px-24">
         <h3 className="text-2xl mb-4 xl:ml-auto">Technologies:</h3>
         <p className="sm:ml-2 mt-[7px]">
-          HTML, CSS, Javascript, React, Next.js, SCSS, MongoDB, PostgreSQL,
-          Node.js
+          HTML, CSS, Javascript, React, Next.js, SCSS, MongoDB, Git, Node.js
         </p>
       </div>
     </section>
