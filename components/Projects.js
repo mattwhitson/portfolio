@@ -4,17 +4,40 @@ import ProjectReverse from "./ProjectReverse";
 const Projects = () => {
   return (
     <section id="projects" className="max-w-7xl pt-8 mx-auto text-white">
-      <h3 className="w-fit pl-4 mt-12 font-bold sm:px-6 md:px-24 xl:px-0 text-4xl lg:text-6xl border-b-8 border-blue-700">
+      <h3 className="w-fit pl-4 mt-12 font-bold sm:px-6 md:px-24 xl:px-0 text-4xl lg:text-6xl ">
         Personal Projects
       </h3>
       <Project {...projectOne} />
       <ProjectReverse {...projectTwo} />
       <Project {...projectThree} />
+      <ProjectReverse {...projectFour} />
     </section>
   );
 };
 
 const projectOne = {
+  title: "E-commerce Frontend",
+  url: "/audiophile.png",
+  gitLink: "https://github.com/mattwhitson/audiophile-ecommerce-frontend",
+  liveLink:
+    "https://audiophile-ecommerce-frontend-qwwtgrql9-mattwhitson.vercel.app/",
+  techStack: "React, SCSS, Framer Motion",
+  explanation:
+    "The frontend for an audiophile e-commerce website. Based off of the frontendmentor.io Audiophile E-commerce Website challenge, which provided both the JSON data to populate the website and the Figma design files which the project is based off of.",
+};
+
+const projectTwo = {
+  title: "NASA Photo App",
+  url: "/spacestagram.png",
+  gitLink:
+    "https://github.com/mattwhitson/Shopify-Frontend-Internship-Challenge",
+  liveLink: "https://shopify-frontend-internship-challenge.vercel.app/",
+  techStack: "Next.js, TailwindCSS, NASA's APOD API",
+  explanation:
+    "Basic app that allows you to view NASA's daily uploads to the Astronomy Photo of the Day API! There are a few different filtering options (random, by a specific date, chronologically).",
+};
+
+const projectThree = {
   title: "Messaging App",
   url: "/messenger.png",
   gitLink: "https://github.com/mattwhitson/chat-app-next.js",
@@ -24,17 +47,7 @@ const projectOne = {
     "Basic messaging app where you can create an account and start conversations with other users. This app has real-time messages and notifications thanks to the utilization of web sockets with the Socket.io library. Additionally, it has link previews by detecting when a message is a url, and then uses Cheerio on the backend to scrape the relevant meta tags from the website the url directs to. Deployed on an Ubuntu Digital Ocean droplet using NGINX as a reverse proxy",
 };
 
-const projectTwo = {
-  title: "Photo Sharing App",
-  url: "/photostop.png",
-  gitLink: "https://github.com/mattwhitson/photostop",
-  liveLink: "https://photo-app-client.vercel.app/",
-  techStack: "Next.js, TailwindCSS, Express.js, PostgreSQL, Firebase",
-  explanation:
-    "Simple photo sharing app where users can create an account, sign in, and share photos. Images are uploaded and saved on Firebase Storage. Users can also like photos, comment on photos, and visit other user's profiles!",
-};
-
-const projectThree = {
+const projectFour = {
   title: "MovieDB App",
   url: "/movie-center.png",
   gitLink: "https://github.com/mattwhitson/movie-app",

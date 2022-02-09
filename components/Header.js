@@ -9,16 +9,18 @@ const Header = () => {
   const sections = ["home", "about", "projects", "contact"];
 
   const determineCurrentSection = () => {
-    if (window.scrollY < sectionHeights[1] - 250) {
-      setCurrentSection(sections[0]);
-    } else if (window.scrollY > sectionHeights[2] - 250) {
-      if (window.scrollY > sectionHeights[3] - 500) {
+    switch (true) {
+      case window.scrollY > sectionHeights[3] - 500:
         setCurrentSection(sections[3]);
-      } else {
+        break;
+      case window.scrollY > sectionHeights[2] - 500:
         setCurrentSection(sections[2]);
-      }
-    } else {
-      setCurrentSection(sections[1]);
+        break;
+      case window.scrollY > sectionHeights[1] - 500:
+        setCurrentSection(sections[1]);
+        break;
+      default:
+        setCurrentSection(sections[0]);
     }
   };
 

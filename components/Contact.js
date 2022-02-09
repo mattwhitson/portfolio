@@ -38,7 +38,7 @@ const Contact = () => {
       id="contact"
       className="flex flex-col max-w-7xl mx-auto pt-8 text-white"
     >
-      <h3 className="w-fit pl-6 mt-12 md:pl-24 xl:pl-0 text-4xl lg:text-6xl font-bold text-white border-b-8 border-blue-700">
+      <h3 className="w-fit pl-6 mt-12 md:pl-24 xl:pl-0 text-4xl lg:text-6xl font-bold text-white ">
         Contact
       </h3>
       <p className="w-80 mx-auto text-center font-semibold text-xl pt-6 sm:pt-36">
