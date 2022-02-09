@@ -13,7 +13,7 @@ const ProjectReverse = ({
   return (
     <article className="mt-8 lg:px-16 2xl:px-0">
       <h4
-        className={`relative z-50 p-2 pl-4 text-2xl lg:text-4xl font-semibold transition-all duration-200 ease-in-out md:text-right ${
+        className={`relative z-50 p-2 text-2xl lg:text-4xl font-semibold transition-all duration-200 ease-in-out md:text-right ${
           onHover && "text-yellow-400 -translate-y-2"
         }`}
       >

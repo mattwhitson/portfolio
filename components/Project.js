@@ -8,7 +8,7 @@ const Project = ({ title, url, gitLink, liveLink, techStack, explanation }) => {
       className="relative mt-6 sm:mt-12  lg:px-16 2xl:px-0"
     >
       <h4
-        className={`relative z-50 p-2 pl-4 w-fit text-2xl lg:text-4xl font-semibold transition-all duration-200 ease-in-out ${
+        className={`relative z-50 p-2 w-fit text-2xl lg:text-4xl font-semibold transition-all duration-200 ease-in-out ${
           onHover && "text-yellow-400 -translate-y-2"
         }`}
       >
